@@ -1,0 +1,6 @@
+name: Bedwars
+author: Amitron
+version: "0.1"
+api: Spigot
+api-version: "1.8.8"
+main: net.amitron.bedwars.GMain
