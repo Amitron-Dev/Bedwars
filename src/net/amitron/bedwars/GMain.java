@@ -8,6 +8,7 @@ import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import net.amitron.bedwars.listeners.ClickStartEvent;
 import net.amitron.bedwars.listeners.PlayerJoin;
 import net.amitron.state.GState;
 
@@ -22,6 +23,7 @@ public class GMain extends JavaPlugin{
 		saveDefaultConfig();
 		setState(GState.WAITING);
 		Bukkit.getPluginManager().registerEvents(new PlayerJoin(this), this);
+		Bukkit.getPluginManager().registerEvents(new ClickStartEvent(this), this);
 		
 	}
 	
